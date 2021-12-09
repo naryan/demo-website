@@ -114,7 +114,7 @@ class Main extends React.Component {
       );
     }
     if (error.errorStatus) {
-      history.push("/*", [error]);
+      history.push("/error", [error]);
     }
     return "";
   }
