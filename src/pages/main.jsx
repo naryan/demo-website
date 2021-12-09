@@ -111,11 +111,11 @@ class Main extends React.Component {
         </Layout>
       );
     }
-  //   if (error.errorStatus) {
-  //     history.push("/error", [error]);
-  //   }
-  //   return "";
-  // }
+    if (error.errorStatus) {
+      history.push("/error", [error]);
+    }
+    return "";
   }
+  
 }
 export default Main;

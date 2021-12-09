@@ -4,10 +4,11 @@ import Stack from "../sdk/entry";
 import Layout from "../components/layout";
 import RenderComponents from "../components/render-components";
 
-class About extends React.Component {
+class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      urls: undefined,
       entry: undefined,
       header: undefined,
       footer: undefined,
@@ -17,14 +18,33 @@ class About extends React.Component {
 
   async componentDidMount() {
     try {
-      const { location } = this.props;
-      const result = await Stack.getEntryByUrl("page", location.pathname, [
-        "page_components.from_blog.featured_blogs",
-      ]);
+      const result = await Stack.getEntryByUrl(
+        "page", 
+        this.props.location.pathname, 
+        ["page_components.from_blog.featured_blogs",]
+        );
+      // console.log("databypage", result);
+        const page = await Stack.getEntry(
+          "page"
+        );
+      
+      // console.log("result", page);
+
+      for (let item of page) {
+        for ( let i of item){
+          const urls = i;
+          this.setState({
+            urls: urls
+
+          });
+        }
+      }
+      
       const header = await Stack.getEntry(
         "header",
         "navigation_menu.page_reference"
       );
+      console.log("header url", header);
       const footer = await Stack.getEntry("footer");
       this.setState({
         entry: result[0],
@@ -39,21 +59,51 @@ class About extends React.Component {
     }
   }
 
+  async componentDidUpdate(prevProps){
+    try{
+      if(prevProps.match.params.uid !== this.props.match.params.uid){
+        const result = await Stack.getEntryByUrl(
+          "page", 
+          this.props.location.pathname, 
+          ["page_components.from_blog.featured_blogs",]
+          );
+        // console.log("databypage", result);
+          const page = await Stack.getEntry(
+            "page"
+          );
+      console.log("page info", page);
+      
+      const header = await Stack.getEntry(
+        "header",
+        "navigation_menu.page_reference"
+      );
+      console.log("header url", header);
+      const footer = await Stack.getEntry("footer");
+      this.setState({
+        entry: result[0],
+        header: header[0][0],
+        footer: footer[0][0],
+        error: { errorStatus: false },
+      });
+      }
+    } catch (error) {
+      return error;
+    }
+  }
+
   render() {
     const { header, footer, entry, error } = this.state;
     const { history } = this.props;
-
     if (!error.errorStatus && entry) {
       return (
         <Layout
           header={header}
           footer={footer}
           page={entry}
-          activeTab="About"
+          activeTab={entry.title}
         >
           <RenderComponents
             pageComponents={entry.page_components}
-            about
             contentTypeUid="page"
             entryUid={entry.uid}
             locale={entry.locale}
@@ -66,5 +116,6 @@ class About extends React.Component {
     }
     return "";
   }
+  
 }
-export default About;
+export default Main;
