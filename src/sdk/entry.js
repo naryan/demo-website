@@ -27,7 +27,7 @@ export default {
         .find()
         .then(
           (result) => {
-            console.log(result);
+            // console.log(result);
             
             resolve(result);
           },

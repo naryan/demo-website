@@ -38,6 +38,8 @@ export default function Header(props) {
         </label>
         <nav className="menu">
           <ul className="nav-ul header-ul">
+            {/* {console.log(header.navigation_menu[0].page_reference[0])} */}
+
             {header.navigation_menu.map((list) => (
               <li key={list.label} className="nav-li">
                 <Link

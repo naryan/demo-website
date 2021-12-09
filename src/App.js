@@ -41,14 +41,7 @@ function App() {
           render={(renderProps) => <ContactUS {...renderProps} />}
         />
         <Route
-          exact
-          path="/*"
-          render={(renderProps) => <Main {...renderProps} />}
-        />
-
-        <Route
-          exact
-          path="/teams"
+          path="/:uid"
           render={(renderProps) => <Main {...renderProps} />}
         />
 
@@ -58,7 +51,7 @@ function App() {
           render={(renderProps) => <Main {...renderProps} />}
         /> */}
 
-        <Route path="*" render={(renderProps) => <Error {...renderProps} />} />
+        <Route path="/*" render={(Props) => <Error {...Props} />} />
       </Switch>
     </div>
   );
