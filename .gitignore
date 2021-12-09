@@ -8,8 +8,7 @@
 # testing
 /coverage
 
-# production
-/build
+
 
 # misc
 .env.development
@@ -26,3 +25,6 @@ yarn-error.log*
 
 .vercel
 .talismanrc
+
+# Local Netlify folder
+.netlify

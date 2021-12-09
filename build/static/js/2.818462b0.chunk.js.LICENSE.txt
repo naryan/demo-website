@@ -1,0 +1,164 @@
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*!*******************!*\
+          !*** ./config.js ***!
+          \*******************/
+
+/*!***************************!*\
+          !*** ./src/core/cache.js ***!
+          \***************************/
+
+/*!***************************!*\
+          !*** ./src/core/stack.js ***!
+          \***************************/
+
+/*!*******************************!*\
+          !*** ./node_modules/he/he.js ***!
+          \*******************************/
+
+/*!*******************************!*\
+          !*** ./src/core/lib/utils.js ***!
+          \*******************************/
+
+/*!*********************************!*\
+          !*** ./src/core/lib/request.js ***!
+          \*********************************/
+
+/*!*********************************!*\
+          !*** ./src/runtime/web/http.js ***!
+          \*********************************/
+
+/*!**********************************!*\
+          !*** ./src/core/contentstack.js ***!
+          \**********************************/
+
+/*!***********************************!*\
+          !*** ./src/core/modules/entry.js ***!
+          \***********************************/
+
+/*!***********************************!*\
+          !*** ./src/core/modules/query.js ***!
+          \***********************************/
+
+/*!************************************!*\
+          !*** ./src/core/modules/assets.js ***!
+          \************************************/
+
+/*!************************************!*\
+          !*** ./src/core/modules/result.js ***!
+          \************************************/
+
+/*!****************************************!*\
+          !*** ./src/core/contentstackregion.js ***!
+          \****************************************/
+
+/*!*****************************************!*\
+          !*** ./src/runtime/web/localstorage.js ***!
+          \*****************************************/
+
+/*!******************************************!*\
+          !*** ./src/core/cache-provider/index.js ***!
+          \******************************************/
+
+/*!********************************************!*\
+          !*** ./node_modules/whatwg-fetch/fetch.js ***!
+          \********************************************/
+
+/*!*************************************************!*\
+          !*** ./src/core/cache-provider/localstorage.js ***!
+          \*************************************************/
+
+/*!******************************************************!*\
+          !*** ./node_modules/es6-promise/dist/es6-promise.js ***!
+          \******************************************************/
+
+/*!********************************************************!*\
+          !*** ./node_modules/node-html-parser/dist/esm/back.js ***!
+          \********************************************************/
+
+/*!*********************************************************!*\
+          !*** ./node_modules/node-html-parser/dist/esm/index.js ***!
+          \*********************************************************/
+
+/*!***********************************************************!*\
+          !*** ./node_modules/@contentstack/utils/dist/index.es.js ***!
+          \***********************************************************/
+
+/*!***********************************************************!*\
+          !*** ./node_modules/node-html-parser/dist/esm/matcher.js ***!
+          \***********************************************************/
+
+/*!**************************************************************!*\
+          !*** ./node_modules/node-html-parser/dist/esm/nodes/html.js ***!
+          \**************************************************************/
+
+/*!**************************************************************!*\
+          !*** ./node_modules/node-html-parser/dist/esm/nodes/node.js ***!
+          \**************************************************************/
+
+/*!**************************************************************!*\
+          !*** ./node_modules/node-html-parser/dist/esm/nodes/text.js ***!
+          \**************************************************************/
+
+/*!**************************************************************!*\
+          !*** ./node_modules/node-html-parser/dist/esm/nodes/type.js ***!
+          \**************************************************************/
+
+/*!***************************************************************!*\
+          !*** ./node_modules/isomorphic-fetch/fetch-npm-browserify.js ***!
+          \***************************************************************/
+
+/*!*****************************************************************!*\
+          !*** ./node_modules/node-html-parser/dist/esm/nodes/comment.js ***!
+          \*****************************************************************/
+
+/** @license React v0.20.2
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.13.1
+ * react-is.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+//! moment.js
