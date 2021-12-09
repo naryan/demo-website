@@ -1,4 +1,5 @@
-const contentstack = require("contentstack");
+/* eslint-disable no-undef */
+import contentstack from "contentstack";
 const Stack = contentstack.Stack({
   api_key: process.env.REACT_APP_APIKEY,
   delivery_token: process.env.REACT_APP_DELIVERY_TOKEN,
@@ -28,7 +29,7 @@ export default {
         .then(
           (result) => {
             // console.log(result);
-            
+
             resolve(result);
           },
           (error) => {
