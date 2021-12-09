@@ -45,13 +45,7 @@ function App() {
           render={(renderProps) => <Main {...renderProps} />}
         />
 
-        {/* <Route
-          exact
-          path="/*"
-          render={(renderProps) => <Main {...renderProps} />}
-        /> */}
-
-        <Route path="/*" render={(Props) => <Error {...Props} />} />
+        <Route path="*" render={(renderProps) => <Error {...renderProps} />} />
       </Switch>
     </div>
   );
