@@ -87,9 +87,7 @@ class Main extends React.Component {
       });
       }
     } catch (error) {
-      this.setState({
-        error: { errorStatus: true, errorCode: 404, errorData: error },
-      });
+      return error;
     }
   }
 
@@ -113,10 +111,11 @@ class Main extends React.Component {
         </Layout>
       );
     }
-    if (error.errorStatus) {
-      history.push("/error", [error]);
-    }
-    return "";
+  //   if (error.errorStatus) {
+  //     history.push("/error", [error]);
+  //   }
+  //   return "";
+  // }
   }
 }
 export default Main;
