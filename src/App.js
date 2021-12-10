@@ -9,7 +9,7 @@ import "./styles/third-party.css";
 import "./styles/style.css";
 import "./styles/modal.css";
 import Main from "./pages/main.jsx";
-import Error from "./pages/error.jsx";
+// import Error from "./pages/error.jsx";
 
 function App() {
   return (
@@ -45,7 +45,7 @@ function App() {
           render={(renderProps) => <Main {...renderProps} />}
         />
 
-        <Route path="*" render={(renderProps) => <Error {...renderProps} />} />
+        {/* <Route path="*" render={(renderProps) => <Error {...renderProps} />} /> */}
       </Switch>
     </div>
   );
