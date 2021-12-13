@@ -16,7 +16,9 @@ class Main extends React.Component {
     };
   }
 
-  async componentDidMount() {
+  async componentDidMount(prevProps) {
+    console.log(prevProps);
+    console.log(this.state);
     try {
       const result = await Stack.getEntryByUrl(
         "page", 
@@ -53,7 +55,7 @@ class Main extends React.Component {
         error: { errorStatus: false },
       });
     } catch (error) {
-      this.setState({
+      () => this.setState({
         error: { errorStatus: true, errorCode: 404, errorData: error },
       });
     }
@@ -87,7 +89,9 @@ class Main extends React.Component {
       });
       }
     } catch (error) {
-      return error;
+      () => this.setState({
+        error: { errorStatus: true, errorCode: 404, errorData: error },
+      });
     }
   }
 

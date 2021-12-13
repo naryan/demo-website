@@ -34,7 +34,7 @@ class Home extends React.Component {
         error: { errorStatus: false },
       });
     } catch (error) {
-      this.setState({
+      () => this.setState({
         error: { errorStatus: true, errorCode: 404, errorData: error },
       });
     }
