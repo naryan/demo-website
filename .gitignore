@@ -11,7 +11,7 @@
 
 
 # misc
-.env.development
+.env
 .env.sample
 .DS_Store
 .env.local
