@@ -57,7 +57,6 @@ class Main extends React.Component {
         error: { errorStatus: true, errorCode: 404, errorData: error },
       });
     }
-    console.log(this.state);
   }
 
   async componentDidUpdate(prevProps){
@@ -80,7 +79,7 @@ class Main extends React.Component {
       );
       console.log("header url", header);
       const footer = await Stack.getEntry("footer");
-      () => this.setState({
+      this.setState({
         entry: result[0],
         header: header[0][0],
         footer: footer[0][0],
